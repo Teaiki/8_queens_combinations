@@ -430,7 +430,7 @@ void free_patterns(char **black_bg, char **white_bg, char **queen_black_bg, char
   free(queen_white_bg);
 }
 
-int main()
+int main(void)
 {
   char **black_bg, **white_bg, **queen_black_bg, **queen_white_bg;
 
@@ -444,5 +444,5 @@ int main()
 
   // Free memory for pattern
   free_patterns(black_bg, white_bg, queen_black_bg, queen_white_bg);
-  return(0);
+  return 0;
 }
